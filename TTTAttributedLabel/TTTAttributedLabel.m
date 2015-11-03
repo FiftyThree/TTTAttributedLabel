@@ -26,6 +26,10 @@
 #import <Availability.h>
 #import <objc/runtime.h>
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
+
 #define kTTTLineBreakWordWrapTextWidthScalingFactor (M_PI / M_E)
 
 static CGFloat const TTTFLOAT_MAX = 100000;
@@ -1862,3 +1866,5 @@ afterInheritingLabelAttributesAndConfiguringWithBlock:(NSMutableAttributedString
 }
 
 @end
+
+#pragma clang diagnostic pop
